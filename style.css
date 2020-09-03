@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif, 'Lato';
+    color: #FFA;
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+}
+
+.navbar-dark.bg-dark {
+    background-color: black;
+}
+
+.navbar {
+ 
+}
+#carouselExampleIndicators img {
+    width: 100%;  /* fit the image within the div */
+    /* FANCY ADVANCED CSS - calc():
+           calculates the height of the full page (100vh)
+           minus the height of the navbar (56px)
+           minus the height of the second-navbar (50px)
+      allocates this height to the carousel images, so that the carousel, navbar, and second-navbar can all fit on the page (regardless of screen size)
+   */
+    height: calc(100vh - 56px - 50px);
+    object-fit: cover;  /* "object-fit" property has various options for fitting an image within a specified space (works because both the img width and height are specified) */
+  }
+
+.cover-img {
+    width: 100%; 
+    object-fit: cover;
+}
+
+footer {
+    display: flex;  /* allows use of "justify-content" property */
+    justify-content: center;  /* horizontally centers the contents (the social icons) */
+    background-color: black;
+    height: 100px;
+    padding: 20px;
+  }
+  
+footer a {
+    margin: 5px;
+    text-decoration: none!important;
+  }
+  
+.social-icon {
+    display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+    width: 50px;
+    height: 50px;
+    color:black;
+    background-color: #FFA;
+    justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+    align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
+    border-radius: 50%;  /* makes it round (circle if width and height are the same) */
+  }
+  
+.social-icon:hover {
+    color: black;  /* change color when hover over the link */
+  }
